@@ -78,5 +78,8 @@ GenBit.sol	Main ERC20 token with order book, governance, and tax logic
 ```
 MIT License © 2025 GenBit Developers
 ```
-## Contract Details: 0xfe26cee81eea554db2ff74431c8d07f6dcd9ab77eb80b9940a00961d9e6abd6b
+## Contract Details: 
+```
+0xfe26cee81eea554db2ff74431c8d07f6dcd9ab77eb80b9940a00961d9e6abd6b
+```
 ![Screenshot 2025-05-01 225622](https://raw.githubusercontent.com/Sd8698621/GenBit2.0/refs/heads/main/demo.png)
