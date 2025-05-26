@@ -51,7 +51,7 @@ GenBit (GBT) is a custom ERC20 token with built-in **tokenomics**, **order book 
 
 ```bash
 git clone https://github.com/Sd8698621/GenBit2.0.git
-cd genbit
+cd GenBit2.0
 ```
 ### 2. Install dependencies
 ### 3. Compile
