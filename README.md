@@ -1,67 +1,82 @@
-# B2B Supply Chain on Blockchain
+# 🚀 GenBit (GBT) Smart Contract
 
-## Project Description
+GenBit (GBT) is a custom ERC20 token with built-in **tokenomics**, **order book trading**, **liquidity management**, and **governance voting**, designed to simulate decentralized exchange dynamics on-chain without relying on traditional AMMs (Automated Market Makers).
 
-B2B Supply Chain on Blockchain is a decentralized application (dApp) that leverages Ethereum blockchain technology to create a transparent, immutable, and secure supply chain management system for businesses. The solution tracks products from manufacturing to delivery, creating a verifiable record of ownership transfers and status changes that eliminates fraud, reduces paperwork, and builds trust between trading partners.
+---
 
-The smart contract implements core supply chain functionalities including product registration, ownership transfer, and status tracking. Each product in the system has a complete, tamper-proof history showing its journey through various stakeholders in the supply chain ecosystem.
+## 📜 Features
 
-## Project Vision
+### ✅ ERC20 Token (Upgradeable)
+- Total supply: `21,000,000 GBT`
+- Upgradeable via proxy pattern
+- Uses OpenZeppelin's secure base contracts
 
-Our vision is to revolutionize B2B supply chain management by eliminating information silos, reducing intermediaries, and creating a single source of truth that all parties can trust. By bringing supply chain interactions onto the blockchain, we aim to:
+### 💰 Tokenomics
+- Tax system with dynamic rates (1%–4%) that **decrease with adoption**
+- Portion of tax is **burned** to reduce supply
+- Collected tax used for liquidity injection
 
-1. **Increase transparency** by making product journeys visible to all authorized participants
-2. **Build trust** between trading partners through verified transactions and immutable records
-3. **Reduce costs** associated with reconciliation, paperwork, and dispute resolution
-4. **Accelerate settlements** through faster verification of deliveries and transactions
-5. **Minimize fraud** with cryptographically secure product tracking and ownership verification
+### 🧾 Order Book System
+- Users can place **Buy** and **Sell** orders at specific prices
+- Orders are matched in FIFO order (first-in, first-out)
+- Trades include tax and burning logic
 
-We believe that blockchain technology can transform traditional supply chains into collaborative ecosystems where information flows freely between authorized parties, disputes are minimized, and business relationships become more efficient and resilient.
+### 🏦 Liquidity Mechanism
+- Liquidity auto-injected when USDT reserve falls below a threshold
+- Liquidity grows proportionally to adoption
 
-## Key Features
+### 🗳 Governance Voting
+- Token holders with ≥ `1000 GBT` can vote on proposals
+- One vote per address per proposal
+- All votes are recorded on-chain
 
-### 1. Product Registration
-Manufacturers can register new products on the blockchain with detailed information including name, manufacturer details, and timestamp. Each product receives a unique identifier that follows it throughout its lifecycle.
+### 🔐 Security
+- Uses `ReentrancyGuard` to protect against reentrancy attacks
+- `Ownable` access control for critical functions
 
-### 2. Ownership Transfer
-The smart contract enables secure transfer of ownership between supply chain participants. Each transfer is recorded permanently on the blockchain with details about the sender, receiver, timestamp, and location.
+---
 
-### 3. Status Tracking
-Products can be marked with different statuses (Manufactured, InTransit, Delivered, Rejected) reflecting their current state in the supply chain journey. Status updates are recorded on the blockchain, creating an audit trail of the product's progress.
+## 🔧 Tech Stack
 
-### 4. Immutable History
-Every product maintains a complete, tamper-proof history of ownership transfers and status changes. This provides valuable data for auditing, dispute resolution, and supply chain optimization.
+- Solidity `^0.8.20`
+- OpenZeppelin Upgradeable Contracts
+- EVM-compatible (Ethereum, BSC, Polygon, etc.)
+- Deployment-compatible with Hardhat, Foundry, Remix
 
-### 5. Ownership Validation
-Only the current owner of a product can transfer ownership or update its status, ensuring that unauthorized parties cannot manipulate product information.
+---
 
-## Future Scope
+## 🛠 Installation & Deployment (Hardhat)
 
-### Enhanced Integration
-- Integration with IoT devices for automated status updates and condition monitoring
-- API connectors for existing ERP and SCM systems to bridge traditional systems with blockchain
-- Mobile applications for easy scanning and verification of products at various touchpoints
+### 1. Clone the repo
 
-### Advanced Features
-- Smart contract-based payment escrow triggered by delivery confirmation
-- Multi-party consensus mechanisms for delivery verification
-- Tokenization of inventory and trade finance opportunities
-- Implementation of zero-knowledge proofs for private business data
-- Integration with decentralized identity solutions for stakeholder verification
+```bash
+git clone https://github.com/yourname/genbit.git
+cd genbit
+```
+### 2. Install dependencies
+### 3. Compile
+### 4. Deploy
+### 5. Verify on Etherscan (optional)
 
-### Ecosystem Expansion
-- Development of a consortium blockchain model with industry-specific governance
-- Inclusion of regulatory compliance checks and automated reporting
-- Carbon footprint tracking and sustainability metrics
-- Integration with trade finance and insurance providers
-- Development of analytics and visualization tools for supply chain optimization
+### ✍️ Key Contracts
+### Contract	Description
+GenBit.sol	Main ERC20 token with order book, governance, and tax logic
 
-### Technical Improvements
-- Layer 2 scaling solutions for higher transaction throughput
-- Cross-chain interoperability to connect with other blockchain networks
-- Implementation of more complex business logic through upgradeable contracts
-- Enhanced privacy features for sensitive business data
+- 📈 Adoption Metrics
+- Tax rate reduces over time as adoption increases (adoptionProgress)
 
-This project represents the first step in bringing the power of blockchain to B2B supply chains, with a roadmap for continuous improvement and expansion to address the complex needs of modern global commerce.
+- Burn rate and liquidity injection scale with usage
+
+### 🛡 Security Notes
+- Upgradeable contract: Must be deployed using a proxy (Transparent or UUPS)
+
+- Emergency functions: Admin can withdraw tokens from the contract in emergencies
+
+- Governance safeguards: One vote per wallet per proposal, minimum balance required
+
+
+```
+MIT License © 2025 GenBit Developers
+```
 ## Contract Details: 0xfe26cee81eea554db2ff74431c8d07f6dcd9ab77eb80b9940a00961d9e6abd6b
 ![Screenshot 2025-05-01 225622](https://raw.githubusercontent.com/Sd8698621/GenBit2.0/refs/heads/main/demo.png)
