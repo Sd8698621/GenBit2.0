@@ -63,5 +63,5 @@ Only the current owner of a product can transfer ownership or update its status,
 - Enhanced privacy features for sensitive business data
 
 This project represents the first step in bringing the power of blockchain to B2B supply chains, with a roadmap for continuous improvement and expansion to address the complex needs of modern global commerce.
-## Contract Details: 0xa83A0F428FA202F9f7f9D835C4B0CecFD5d2e84E
+## Contract Details: 0xfe26cee81eea554db2ff74431c8d07f6dcd9ab77eb80b9940a00961d9e6abd6b
 ![Screenshot 2025-05-01 225622](https://github.com/user-attachments/assets/5121833d-13b1-440a-a9d4-b61be0cdb480)
